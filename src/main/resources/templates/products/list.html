@@ -104,6 +104,10 @@
             </div>
         </div>
     </div>
+
+    <footer class="text-center mt-4 py-3 border-top text-muted">
+        <p th:text="${'학번: 2171148  |  성명: 최한나  |  실습 수행: ' + #temporals.format(#temporals.createNow(), 'yyyy-MM-dd HH:mm:ss')}"></p>
+    </footer>
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
