@@ -45,7 +45,7 @@
 </nav>
 
 <div class="container">
-    <!-- 헤더: 제목 + 상품 등록 버튼 -->
+    
     <div class="d-flex justify-content-between align-items-center mb-3">
         <div class="page-header">
             <h4 class="fw-bold mb-0">상품 목록</h4>
@@ -59,18 +59,23 @@
            sec:authorize="hasRole('ADMIN')">+ 상품 등록</a>
     </div>
 
-    <!-- 검색 폼: 전체 너비, 버튼 오른쪽 정렬 -->
-    <form th:action="@{/products}" method="get" class="mb-3">
-        <div class="input-group">
-            <input type="text"
-                   name="keyword"
-                   class="form-control"
-                   placeholder="상품명으로 검색"
-                   th:value="${keyword}">
-            <button type="submit" class="btn btn-primary px-4">검색</button>
-            <a th:href="@{/products}" class="btn btn-outline-secondary">초기화</a>
-        </div>
-    </form>
+    <form th:action="@{/products}" method="get" class="row g-2 mb-3">
+    <div class="col">
+        <input type="text"
+               name="keyword"
+               class="form-control"
+               placeholder="상품명으로 검색"
+               th:value="${keyword}">
+    </div>
+
+    <div class="col-auto">
+        <button type="submit" class="btn btn-primary px-4 text-nowrap">검색</button>
+    </div>
+
+    <div class="col-auto">
+        <a th:href="@{/products}" class="btn btn-outline-secondary text-nowrap">초기화</a>
+    </div>
+</form>
 
     <div class="card border-0 shadow-sm">
         <div class="card-body p-0">
