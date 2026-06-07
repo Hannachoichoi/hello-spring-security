@@ -29,7 +29,8 @@
       "Bash(del \"C:\\\\Users\\\\Hansung\\\\IdeaProjects\\\\hello-spring-security\\\\src\\\\test\\\\java\\\\kr\\\\ac\\\\hansung\\\\service\\\\ProductServiceTest.java\")",
       "Bash(python -c ' *)",
       "Bash(python *)",
-      "Bash(mvn spring-boot:run)"
+      "Bash(mvn spring-boot:run)",
+      "Bash(grep -o 'w:styleId=\"[^\"]*\"' /tmp/report_unpacked/word/styles.xml | head -30)"
     ]
   }
 }

@@ -58,6 +58,11 @@
             </div>
         </div>
     </div>
+
+    <footer class="text-center mt-4 py-3 border-top" style="color:white;">
+        <p th:text="${'학번: 2171148  |  성명: 최한나  |  실습 수행: ' + #temporals.format(#temporals.createNow(), 'yyyy-MM-dd HH:mm:ss')}"></p>
+    </footer>
+
 </div>
 </body>
 </html>
